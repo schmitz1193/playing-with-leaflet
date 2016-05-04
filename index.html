@@ -16,12 +16,24 @@
     id: 'schmitz1193.01b472jd',
     accessToken: 'pk.eyJ1Ijoic2NobWl0ejExOTMiLCJhIjoiY2lucWxseHRnMTBnZnR2bHk3NWxlNHRwcyJ9.xMZLro3avmWbT14lrdGvMQ'
     }).addTo(mymap);
+
+    //add marker
     var marker = L.marker([51.5, -0.09]).addTo(mymap);
+
+    //add circle on map
     var circle = L.circle([51.508, -0.11], 500, {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5
-}).addTo(mymap);
+    }).addTo(mymap);
+
+    //add polygon to mapbox
+    var polygon = L.polygon([
+    [51.509, -0.08],
+    [51.503, -0.06],
+    [51.51, -0.047]
+    ]).addTo(mymap);
+
   </script>
 </body>
 </html>
